@@ -58,6 +58,17 @@ struct Service{
         print("User es \(user.data())")
         COLLECTION_USERS.document(user.user_uid).setData(user.data(), completion: completion)
     }
+    // MARK: - Obtener usuario
+    static func fetchUser(withUid uid: String, completion: @escaping(User?) -> Void) {
+        COLLECTION_USERS.document(uid).getDocument { (snapshot, error) in
+            guard let dict = snapshot?.data() else {
+                completion(nil)
+                return
+            }
+            let user = User(dict: dict)
+            completion(user)
+        }
+    }
 }
 
 

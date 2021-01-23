@@ -19,11 +19,6 @@ class AuthDataItemsView: UIView {
         imgV.layer.cornerRadius = 10
         return imgV
     }()
-    // Placeholder
-    let placeholder: String
-    let secureEntry: Bool
-    let type: UIKeyboardType
-    let delegate: UITextFieldDelegate
     // Textfield
     lazy var txtfield: UITextField = {
         let txt = UITextField()
@@ -32,21 +27,29 @@ class AuthDataItemsView: UIView {
         txt.isSecureTextEntry = self.secureEntry
         txt.keyboardType = self.type
         txt.delegate = delegate
+        txt.accessibilityIdentifier = "\(idStackView)\(placeholder)"
         txt.attributedPlaceholder = NSAttributedString(string: "Escribe tu \(self.placeholder)",
                                                         attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
         txt.setLeftPaddingPoints(16)
         txt.textColor = .black
         return txt
     }()
+    // MARK: - Variables
+    let placeholder: String
+    let secureEntry: Bool
+    let type: UIKeyboardType
+    let delegate: UITextFieldDelegate
+    let idStackView: String
     
     // MARK: - Init
     // Init
-    init(image: UIImage, placeholder: String, type: UIKeyboardType = .default, secureEntry: Bool = false, delegate: UITextFieldDelegate) {
+    init(image: UIImage, placeholder: String, type: UIKeyboardType = .default, secureEntry: Bool = false, delegate: UITextFieldDelegate, idStackView: String) {
         self.image = image
         self.placeholder = placeholder
         self.secureEntry = secureEntry
         self.type = type
         self.delegate = delegate
+        self.idStackView = idStackView
         super.init(frame: .zero)
         clipsToBounds = true
         // Agrega image view
@@ -71,6 +74,8 @@ class AuthDataItemsView: UIView {
         self.txtfield.resignFirstResponder()
     }
     
-    
+}
+
+extension AuthDataItemsView: UITextFieldDelegate {
     
 }

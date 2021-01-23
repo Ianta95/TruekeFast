@@ -42,19 +42,45 @@ class MenuViewController: UIViewController {
     // MARK: - API
     // Checar si esta loggead
     func checkIfUserLoggedIn(){
-        do {
-            try Auth.auth().signOut()
-        } catch {
-            print("DEBUG: Error al intentar cerrar sesión")
-        }
         if Auth.auth().currentUser == nil {
             print("El usuario no existe")
             presentLoginController()
         } else {
             print("Si existe el usuario, es \(Auth.auth().currentUser?.uid)")
+            fetchCurrentUserAndCards()
+        }
+    }
+    // Logout
+    func logout(){
+        do {
+            try Auth.auth().signOut()
+            presentLoginController()
+        } catch {
+            print("DEBUG: Error al intentar cerrar sesión")
         }
     }
     // Obten Usuario
+    func fetchCurrentUserAndCards(){
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        Service.fetchUser(withUid: uid) { user in
+            if (user != nil) {
+                self.user = user
+                print("User es \(self.user!.data())")
+            } else {
+                self.logout()
+            }
+        }
+    }
+    // Checar Status
+    func checkStatus(){
+        switch self.user?.user_status {
+        case .REGISTER_DATA:
+            
+            break
+        default:
+            break
+        }
+    }
     // Obten Articulo
     func fetchArticles(forCurrentUser user: User) {
         

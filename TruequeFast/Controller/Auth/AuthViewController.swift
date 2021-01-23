@@ -101,7 +101,7 @@ class AuthViewController: UIViewController {
                                    type: .emailAddress, secureEntry: false),
             AuthDataStackViewModel(image:  #imageLiteral(resourceName: "auth/ic_white_password").withRenderingMode(.alwaysOriginal), placeholder: "contraseña",
                                    type: .default, secureEntry: true)
-        ], width: view.frame.width * 0.9, delegate: self)
+        ], width: view.frame.width * 0.9, delegate: self, idStackView: "login")
         view.addSubview(loginView!)
         loginView!.centerX(inView: view)
         loginView!.anchor(bottom: btnStacks.topAnchor, paddingBottom: 30)
@@ -112,7 +112,7 @@ class AuthViewController: UIViewController {
             AuthDataStackViewModel(image: #imageLiteral(resourceName: "auth/ic_white_phone").withRenderingMode(.alwaysOriginal), placeholder: "número de celular", type: .phonePad, secureEntry: false),
             AuthDataStackViewModel(image: #imageLiteral(resourceName: "auth/ic_white_email").withRenderingMode(.alwaysOriginal), placeholder: "email", type: .emailAddress, secureEntry: false),
             AuthDataStackViewModel(image: #imageLiteral(resourceName: "auth/ic_white_password").withRenderingMode(.alwaysOriginal), placeholder: "contraseña", type: .default, secureEntry: true)
-        ], width: view.frame.width * 0.9, delegate: self)
+        ], width: view.frame.width * 0.9, delegate: self, idStackView: "register")
         view.addSubview(registerView!)
         registerView!.centerX(inView: view)
         registerView!.anchor(bottom: btnStacks.topAnchor, paddingBottom: 10)
@@ -184,7 +184,6 @@ class AuthViewController: UIViewController {
     // MARK: - Acciones
     // Click enter
     @objc func handleEnter(){
-        createLoadScreen()
         switch(menuShowed){
         case .LOGIN_EMAIL:
             let data = loginView!.getData()
@@ -228,10 +227,13 @@ class AuthViewController: UIViewController {
     // MARK: - Otras funciones
     private func setAuth(){
         if(viewModel.formIsValid) {
+            print("viewmodel es \(viewModel)")
             let loadScreen = createLoadScreen()
             if(viewModel.process == .LOGIN_EMAIL){
                 AuthService.loginUser(withEmail: viewModel.email!, password: viewModel.password!) { (result, error) in
                     if let error = error {
+                        print("Hubo un error, \(error.localizedDescription)")
+                        loadScreen.dismissal()
                         return
                     }
                     loadScreen.dismissal()
@@ -245,7 +247,8 @@ class AuthViewController: UIViewController {
                                                  phone: viewModel.phone!)
                 AuthService.registerUser(withCredentials: credential) { error in
                     if let error = error {
-                        print("Hubo un error al registrar")
+                        print("Hubo un error, \(error.localizedDescription)")
+                        loadScreen.dismissal()
                     } else {
                         print("Registro salio bien")
                         loadScreen.dismissal()
@@ -253,6 +256,8 @@ class AuthViewController: UIViewController {
                     }
                 }
             }
+        } else {
+            print("No puede hacer Auth")
         }
     }
 }
@@ -261,6 +266,9 @@ class AuthViewController: UIViewController {
 extension AuthViewController: UITextFieldDelegate {
     // MARK: - Should Return
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("Le dio done a \(textField.accessibilityIdentifier)")
+        loginView!.setNextBecomerResponder(id: textField.accessibilityIdentifier!)
+        registerView!.setNextBecomerResponder(id: textField.accessibilityIdentifier!)
         return true
     }
     
@@ -275,7 +283,7 @@ extension AuthViewController: UITextFieldDelegate {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
             print("Is Focused, keyboardSize es \(keyboardSize.height)")
             if self.view.frame.origin.y == 0 {
-                self.view.frame.origin.y -= 230
+                self.view.frame.origin.y -= 200
             }
         }
     }
