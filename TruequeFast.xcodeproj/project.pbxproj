@@ -1,0 +1,1007 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B5AD6BEB42EF880C200E8C3 /* Pods_TruequeFast_TruequeFastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B15C18741ED19133BB815FB /* Pods_TruequeFast_TruequeFastUITests.framework */; };
+		B900F42825B0D5BF00AB8A8B /* logo.svg in Resources */ = {isa = PBXBuildFile; fileRef = B900F42725B0D5BF00AB8A8B /* logo.svg */; };
+		B900F45525B118E800AB8A8B /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900F45425B118E800AB8A8B /* Service.swift */; };
+		B900F45B25B135F100AB8A8B /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900F45A25B135F100AB8A8B /* AuthViewController.swift */; };
+		B94C884625AE2218002E8FE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C884525AE2218002E8FE6 /* AppDelegate.swift */; };
+		B94C884825AE2218002E8FE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C884725AE2218002E8FE6 /* SceneDelegate.swift */; };
+		B94C884D25AE2218002E8FE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94C884B25AE2218002E8FE6 /* Main.storyboard */; };
+		B94C885025AE2218002E8FE6 /* TruequeFast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B94C884E25AE2218002E8FE6 /* TruequeFast.xcdatamodeld */; };
+		B94C885225AE2236002E8FE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B94C885125AE2236002E8FE6 /* Assets.xcassets */; };
+		B94C885525AE2236002E8FE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94C885325AE2236002E8FE6 /* LaunchScreen.storyboard */; };
+		B94C886025AE2238002E8FE6 /* TruequeFastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C885F25AE2238002E8FE6 /* TruequeFastTests.swift */; };
+		B94C886B25AE2238002E8FE6 /* TruequeFastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C886A25AE2238002E8FE6 /* TruequeFastUITests.swift */; };
+		B94C88A425AE268D002E8FE6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C88A325AE268D002E8FE6 /* User.swift */; };
+		B94C88A925AE31FF002E8FE6 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C88A825AE31FF002E8FE6 /* Enums.swift */; };
+		B94C88B125AE410A002E8FE6 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C88B025AE410A002E8FE6 /* Article.swift */; };
+		B94C88B625AE7F7D002E8FE6 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C88B525AE7F7C002E8FE6 /* Constantes.swift */; };
+		B94C88BB25AE80C2002E8FE6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C88BA25AE80C2002E8FE6 /* Extensions.swift */; };
+		B94C88C025AE8134002E8FE6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C88BF25AE8134002E8FE6 /* AuthService.swift */; };
+		B94C88CF25AE9C06002E8FE6 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C88CE25AE9C05002E8FE6 /* MenuViewController.swift */; };
+		B94C88D725AEA147002E8FE6 /* HomeNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C88D625AEA147002E8FE6 /* HomeNavigationStackView.swift */; };
+		B94C892625AECBCA002E8FE6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B94C892525AECBC9002E8FE6 /* GoogleService-Info.plist */; };
+		B94C892E25AECF27002E8FE6 /* BottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C892D25AECF27002E8FE6 /* BottomControlsStackView.swift */; };
+		B94C893425AED688002E8FE6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C893325AED688002E8FE6 /* CardView.swift */; };
+		B94C893925AED83C002E8FE6 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C893825AED83B002E8FE6 /* CardViewModel.swift */; };
+		B94C893E25AEDBCB002E8FE6 /* SegmentedBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C893D25AEDBCB002E8FE6 /* SegmentedBarView.swift */; };
+		B999D74825B8C64300740715 /* AuthDataStackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B999D74725B8C64200740715 /* AuthDataStackViewModel.swift */; };
+		B9C1FDD625B22311009BBEA4 /* AuthButtonsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C1FDD525B22311009BBEA4 /* AuthButtonsStackView.swift */; };
+		B9CD24B025BA56BF0004413C /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CD24AF25BA56BE0004413C /* AuthViewModel.swift */; };
+		B9CD24B525BA8E750004413C /* LoadScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CD24B425BA8E750004413C /* LoadScreenView.swift */; };
+		B9CD24D425BA98CC0004413C /* carga.json in Resources */ = {isa = PBXBuildFile; fileRef = B9CD24D325BA98CC0004413C /* carga.json */; };
+		B9F0102325B6218C00937A84 /* AuthDataItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F0102225B6218C00937A84 /* AuthDataItemsView.swift */; };
+		B9F0102B25B63FEC00937A84 /* AuthDataStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F0102A25B63FEB00937A84 /* AuthDataStackView.swift */; };
+		C68B458E3B7957317D53EA4B /* Pods_TruequeFastTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B61F6E2A213F024BECE6E3 /* Pods_TruequeFastTests.framework */; };
+		FD6EE5DCA67A998E426E0C32 /* Pods_TruequeFast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29BC7A9C1711646DB505D1B9 /* Pods_TruequeFast.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B94C885C25AE2238002E8FE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B94C883A25AE2217002E8FE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B94C884125AE2217002E8FE6;
+			remoteInfo = TruequeFast;
+		};
+		B94C886725AE2238002E8FE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B94C883A25AE2217002E8FE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B94C884125AE2217002E8FE6;
+			remoteInfo = TruequeFast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02C49754A9D000A09285C175 /* Pods-TruequeFast-TruequeFastUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruequeFast-TruequeFastUITests.debug.xcconfig"; path = "Target Support Files/Pods-TruequeFast-TruequeFastUITests/Pods-TruequeFast-TruequeFastUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		29BC7A9C1711646DB505D1B9 /* Pods_TruequeFast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TruequeFast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4545E8D7F0842CAB94E8921A /* Pods-TruequeFastTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruequeFastTests.debug.xcconfig"; path = "Target Support Files/Pods-TruequeFastTests/Pods-TruequeFastTests.debug.xcconfig"; sourceTree = "<group>"; };
+		505E1F35D40325738FC312EE /* Pods-TruequeFast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruequeFast.release.xcconfig"; path = "Target Support Files/Pods-TruequeFast/Pods-TruequeFast.release.xcconfig"; sourceTree = "<group>"; };
+		5B15C18741ED19133BB815FB /* Pods_TruequeFast_TruequeFastUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TruequeFast_TruequeFastUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		749FB74D7905C5339805A207 /* Pods-TruequeFast-TruequeFastUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruequeFast-TruequeFastUITests.release.xcconfig"; path = "Target Support Files/Pods-TruequeFast-TruequeFastUITests/Pods-TruequeFast-TruequeFastUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A72F34916A637D18AE46146F /* Pods-TruequeFastTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruequeFastTests.release.xcconfig"; path = "Target Support Files/Pods-TruequeFastTests/Pods-TruequeFastTests.release.xcconfig"; sourceTree = "<group>"; };
+		B3B61F6E2A213F024BECE6E3 /* Pods_TruequeFastTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TruequeFastTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B900F42725B0D5BF00AB8A8B /* logo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = logo.svg; sourceTree = "<group>"; };
+		B900F45425B118E800AB8A8B /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		B900F45A25B135F100AB8A8B /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		B94C884225AE2218002E8FE6 /* TruequeFast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruequeFast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B94C884525AE2218002E8FE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B94C884725AE2218002E8FE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B94C884C25AE2218002E8FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B94C884F25AE2218002E8FE6 /* TruequeFast.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TruequeFast.xcdatamodel; sourceTree = "<group>"; };
+		B94C885125AE2236002E8FE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B94C885425AE2236002E8FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B94C885625AE2236002E8FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B94C885B25AE2238002E8FE6 /* TruequeFastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TruequeFastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B94C885F25AE2238002E8FE6 /* TruequeFastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruequeFastTests.swift; sourceTree = "<group>"; };
+		B94C886125AE2238002E8FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B94C886625AE2238002E8FE6 /* TruequeFastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TruequeFastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B94C886A25AE2238002E8FE6 /* TruequeFastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruequeFastUITests.swift; sourceTree = "<group>"; };
+		B94C886C25AE2238002E8FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B94C88A325AE268D002E8FE6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B94C88A825AE31FF002E8FE6 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		B94C88B025AE410A002E8FE6 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		B94C88B525AE7F7C002E8FE6 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
+		B94C88BA25AE80C2002E8FE6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B94C88BF25AE8134002E8FE6 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		B94C88CE25AE9C05002E8FE6 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B94C88D625AEA147002E8FE6 /* HomeNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationStackView.swift; sourceTree = "<group>"; };
+		B94C892525AECBC9002E8FE6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B94C892D25AECF27002E8FE6 /* BottomControlsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomControlsStackView.swift; sourceTree = "<group>"; };
+		B94C893325AED688002E8FE6 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		B94C893825AED83B002E8FE6 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		B94C893D25AEDBCB002E8FE6 /* SegmentedBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedBarView.swift; sourceTree = "<group>"; };
+		B999D74725B8C64200740715 /* AuthDataStackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDataStackViewModel.swift; sourceTree = "<group>"; };
+		B9C1FDD525B22311009BBEA4 /* AuthButtonsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButtonsStackView.swift; sourceTree = "<group>"; };
+		B9CD24AF25BA56BE0004413C /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		B9CD24B425BA8E750004413C /* LoadScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadScreenView.swift; sourceTree = "<group>"; };
+		B9CD24D325BA98CC0004413C /* carga.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carga.json; sourceTree = "<group>"; };
+		B9F0102225B6218C00937A84 /* AuthDataItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDataItemsView.swift; sourceTree = "<group>"; };
+		B9F0102A25B63FEB00937A84 /* AuthDataStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDataStackView.swift; sourceTree = "<group>"; };
+		EFDE9174BB0827DD17F8B1A9 /* Pods-TruequeFast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruequeFast.debug.xcconfig"; path = "Target Support Files/Pods-TruequeFast/Pods-TruequeFast.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B94C883F25AE2217002E8FE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6EE5DCA67A998E426E0C32 /* Pods_TruequeFast.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B94C885825AE2238002E8FE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C68B458E3B7957317D53EA4B /* Pods_TruequeFastTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B94C886325AE2238002E8FE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B5AD6BEB42EF880C200E8C3 /* Pods_TruequeFast_TruequeFastUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C620869653CF21FEB48BB0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29BC7A9C1711646DB505D1B9 /* Pods_TruequeFast.framework */,
+				5B15C18741ED19133BB815FB /* Pods_TruequeFast_TruequeFastUITests.framework */,
+				B3B61F6E2A213F024BECE6E3 /* Pods_TruequeFastTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60410292288E2ED7E830E27F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFDE9174BB0827DD17F8B1A9 /* Pods-TruequeFast.debug.xcconfig */,
+				505E1F35D40325738FC312EE /* Pods-TruequeFast.release.xcconfig */,
+				02C49754A9D000A09285C175 /* Pods-TruequeFast-TruequeFastUITests.debug.xcconfig */,
+				749FB74D7905C5339805A207 /* Pods-TruequeFast-TruequeFastUITests.release.xcconfig */,
+				4545E8D7F0842CAB94E8921A /* Pods-TruequeFastTests.debug.xcconfig */,
+				A72F34916A637D18AE46146F /* Pods-TruequeFastTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B900F41925B0CDC100AB8A8B /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				B9F0102225B6218C00937A84 /* AuthDataItemsView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		B900F42525B0D5B000AB8A8B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B9CD24CA25BA90F20004413C /* JSON */,
+				B900F42625B0D5B600AB8A8B /* SVG */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B900F42625B0D5B600AB8A8B /* SVG */ = {
+			isa = PBXGroup;
+			children = (
+				B900F42725B0D5BF00AB8A8B /* logo.svg */,
+			);
+			path = SVG;
+			sourceTree = "<group>";
+		};
+		B900F45925B134B100AB8A8B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				B900F45A25B135F100AB8A8B /* AuthViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		B94C883925AE2217002E8FE6 = {
+			isa = PBXGroup;
+			children = (
+				B94C884425AE2218002E8FE6 /* TruequeFast */,
+				B94C885E25AE2238002E8FE6 /* TruequeFastTests */,
+				B94C886925AE2238002E8FE6 /* TruequeFastUITests */,
+				B94C884325AE2218002E8FE6 /* Products */,
+				60410292288E2ED7E830E27F /* Pods */,
+				0C620869653CF21FEB48BB0A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B94C884325AE2218002E8FE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B94C884225AE2218002E8FE6 /* TruequeFast.app */,
+				B94C885B25AE2238002E8FE6 /* TruequeFastTests.xctest */,
+				B94C886625AE2238002E8FE6 /* TruequeFastUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B94C884425AE2218002E8FE6 /* TruequeFast */ = {
+			isa = PBXGroup;
+			children = (
+				B900F42525B0D5B000AB8A8B /* Resources */,
+				B94C889F25AE2622002E8FE6 /* Models */,
+				B94C889E25AE261D002E8FE6 /* Views */,
+				B94C889D25AE2616002E8FE6 /* ViewModels */,
+				B94C889C25AE2606002E8FE6 /* Controller */,
+				B94C889B25AE2600002E8FE6 /* API */,
+				B94C889A25AE25F0002E8FE6 /* Utils */,
+				B94C884525AE2218002E8FE6 /* AppDelegate.swift */,
+				B94C884725AE2218002E8FE6 /* SceneDelegate.swift */,
+				B94C884B25AE2218002E8FE6 /* Main.storyboard */,
+				B94C885125AE2236002E8FE6 /* Assets.xcassets */,
+				B94C885325AE2236002E8FE6 /* LaunchScreen.storyboard */,
+				B94C885625AE2236002E8FE6 /* Info.plist */,
+				B94C892525AECBC9002E8FE6 /* GoogleService-Info.plist */,
+				B94C884E25AE2218002E8FE6 /* TruequeFast.xcdatamodeld */,
+			);
+			path = TruequeFast;
+			sourceTree = "<group>";
+		};
+		B94C885E25AE2238002E8FE6 /* TruequeFastTests */ = {
+			isa = PBXGroup;
+			children = (
+				B94C885F25AE2238002E8FE6 /* TruequeFastTests.swift */,
+				B94C886125AE2238002E8FE6 /* Info.plist */,
+			);
+			path = TruequeFastTests;
+			sourceTree = "<group>";
+		};
+		B94C886925AE2238002E8FE6 /* TruequeFastUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B94C886A25AE2238002E8FE6 /* TruequeFastUITests.swift */,
+				B94C886C25AE2238002E8FE6 /* Info.plist */,
+			);
+			path = TruequeFastUITests;
+			sourceTree = "<group>";
+		};
+		B94C889A25AE25F0002E8FE6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B900F41925B0CDC100AB8A8B /* Custom */,
+				B94C88A825AE31FF002E8FE6 /* Enums.swift */,
+				B94C88B525AE7F7C002E8FE6 /* Constantes.swift */,
+				B94C88BA25AE80C2002E8FE6 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B94C889B25AE2600002E8FE6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B94C88BF25AE8134002E8FE6 /* AuthService.swift */,
+				B900F45425B118E800AB8A8B /* Service.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B94C889C25AE2606002E8FE6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B900F45925B134B100AB8A8B /* Auth */,
+				B94C88CD25AE9BCB002E8FE6 /* Menu */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B94C889D25AE2616002E8FE6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B94C893825AED83B002E8FE6 /* CardViewModel.swift */,
+				B999D74725B8C64200740715 /* AuthDataStackViewModel.swift */,
+				B9CD24AF25BA56BE0004413C /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B94C889E25AE261D002E8FE6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B9C1FDD425B22211009BBEA4 /* Auths */,
+				B94C893225AED64B002E8FE6 /* Menu */,
+				B9CD24B425BA8E750004413C /* LoadScreenView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B94C889F25AE2622002E8FE6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B94C88A325AE268D002E8FE6 /* User.swift */,
+				B94C88B025AE410A002E8FE6 /* Article.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B94C88CD25AE9BCB002E8FE6 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				B94C88CE25AE9C05002E8FE6 /* MenuViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		B94C893225AED64B002E8FE6 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				B94C88D625AEA147002E8FE6 /* HomeNavigationStackView.swift */,
+				B94C892D25AECF27002E8FE6 /* BottomControlsStackView.swift */,
+				B94C893325AED688002E8FE6 /* CardView.swift */,
+				B94C893D25AEDBCB002E8FE6 /* SegmentedBarView.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		B9C1FDD425B22211009BBEA4 /* Auths */ = {
+			isa = PBXGroup;
+			children = (
+				B9C1FDD525B22311009BBEA4 /* AuthButtonsStackView.swift */,
+				B9F0102A25B63FEB00937A84 /* AuthDataStackView.swift */,
+			);
+			path = Auths;
+			sourceTree = "<group>";
+		};
+		B9CD24CA25BA90F20004413C /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				B9CD24D325BA98CC0004413C /* carga.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B94C884125AE2217002E8FE6 /* TruequeFast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B94C886F25AE2238002E8FE6 /* Build configuration list for PBXNativeTarget "TruequeFast" */;
+			buildPhases = (
+				EEBC8F2D7795348D353509D5 /* [CP] Check Pods Manifest.lock */,
+				B94C883E25AE2217002E8FE6 /* Sources */,
+				B94C883F25AE2217002E8FE6 /* Frameworks */,
+				B94C884025AE2217002E8FE6 /* Resources */,
+				7C901E08C3D73666CE3FB997 /* [CP] Embed Pods Frameworks */,
+				A2278BAB82817C0165FB60BD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TruequeFast;
+			productName = TruequeFast;
+			productReference = B94C884225AE2218002E8FE6 /* TruequeFast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B94C885A25AE2238002E8FE6 /* TruequeFastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B94C887225AE2238002E8FE6 /* Build configuration list for PBXNativeTarget "TruequeFastTests" */;
+			buildPhases = (
+				D402D6ACE81EE97CB31E5230 /* [CP] Check Pods Manifest.lock */,
+				B94C885725AE2238002E8FE6 /* Sources */,
+				B94C885825AE2238002E8FE6 /* Frameworks */,
+				B94C885925AE2238002E8FE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B94C885D25AE2238002E8FE6 /* PBXTargetDependency */,
+			);
+			name = TruequeFastTests;
+			productName = TruequeFastTests;
+			productReference = B94C885B25AE2238002E8FE6 /* TruequeFastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B94C886525AE2238002E8FE6 /* TruequeFastUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B94C887525AE2238002E8FE6 /* Build configuration list for PBXNativeTarget "TruequeFastUITests" */;
+			buildPhases = (
+				576E07F2BB69DE27096DDA2C /* [CP] Check Pods Manifest.lock */,
+				B94C886225AE2238002E8FE6 /* Sources */,
+				B94C886325AE2238002E8FE6 /* Frameworks */,
+				B94C886425AE2238002E8FE6 /* Resources */,
+				E7B442234A5866CA971B9891 /* [CP] Embed Pods Frameworks */,
+				89CE00B6618B1F56A7FF02BD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B94C886825AE2238002E8FE6 /* PBXTargetDependency */,
+			);
+			name = TruequeFastUITests;
+			productName = TruequeFastUITests;
+			productReference = B94C886625AE2238002E8FE6 /* TruequeFastUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B94C883A25AE2217002E8FE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					B94C884125AE2217002E8FE6 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					B94C885A25AE2238002E8FE6 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = B94C884125AE2217002E8FE6;
+					};
+					B94C886525AE2238002E8FE6 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = B94C884125AE2217002E8FE6;
+					};
+				};
+			};
+			buildConfigurationList = B94C883D25AE2217002E8FE6 /* Build configuration list for PBXProject "TruequeFast" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B94C883925AE2217002E8FE6;
+			productRefGroup = B94C884325AE2218002E8FE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B94C884125AE2217002E8FE6 /* TruequeFast */,
+				B94C885A25AE2238002E8FE6 /* TruequeFastTests */,
+				B94C886525AE2238002E8FE6 /* TruequeFastUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B94C884025AE2217002E8FE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B94C885525AE2236002E8FE6 /* LaunchScreen.storyboard in Resources */,
+				B94C885225AE2236002E8FE6 /* Assets.xcassets in Resources */,
+				B900F42825B0D5BF00AB8A8B /* logo.svg in Resources */,
+				B94C884D25AE2218002E8FE6 /* Main.storyboard in Resources */,
+				B9CD24D425BA98CC0004413C /* carga.json in Resources */,
+				B94C892625AECBCA002E8FE6 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B94C885925AE2238002E8FE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B94C886425AE2238002E8FE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		576E07F2BB69DE27096DDA2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TruequeFast-TruequeFastUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C901E08C3D73666CE3FB997 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TruequeFast/Pods-TruequeFast-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TruequeFast/Pods-TruequeFast-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TruequeFast/Pods-TruequeFast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89CE00B6618B1F56A7FF02BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TruequeFast-TruequeFastUITests/Pods-TruequeFast-TruequeFastUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TruequeFast-TruequeFastUITests/Pods-TruequeFast-TruequeFastUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TruequeFast-TruequeFastUITests/Pods-TruequeFast-TruequeFastUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2278BAB82817C0165FB60BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TruequeFast/Pods-TruequeFast-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TruequeFast/Pods-TruequeFast-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TruequeFast/Pods-TruequeFast-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D402D6ACE81EE97CB31E5230 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TruequeFastTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7B442234A5866CA971B9891 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TruequeFast-TruequeFastUITests/Pods-TruequeFast-TruequeFastUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TruequeFast-TruequeFastUITests/Pods-TruequeFast-TruequeFastUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TruequeFast-TruequeFastUITests/Pods-TruequeFast-TruequeFastUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEBC8F2D7795348D353509D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TruequeFast-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B94C883E25AE2217002E8FE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B94C88BB25AE80C2002E8FE6 /* Extensions.swift in Sources */,
+				B94C88B125AE410A002E8FE6 /* Article.swift in Sources */,
+				B9CD24B525BA8E750004413C /* LoadScreenView.swift in Sources */,
+				B9F0102325B6218C00937A84 /* AuthDataItemsView.swift in Sources */,
+				B94C885025AE2218002E8FE6 /* TruequeFast.xcdatamodeld in Sources */,
+				B94C88CF25AE9C06002E8FE6 /* MenuViewController.swift in Sources */,
+				B94C884625AE2218002E8FE6 /* AppDelegate.swift in Sources */,
+				B9C1FDD625B22311009BBEA4 /* AuthButtonsStackView.swift in Sources */,
+				B94C88D725AEA147002E8FE6 /* HomeNavigationStackView.swift in Sources */,
+				B94C893925AED83C002E8FE6 /* CardViewModel.swift in Sources */,
+				B94C892E25AECF27002E8FE6 /* BottomControlsStackView.swift in Sources */,
+				B94C893425AED688002E8FE6 /* CardView.swift in Sources */,
+				B9F0102B25B63FEC00937A84 /* AuthDataStackView.swift in Sources */,
+				B900F45B25B135F100AB8A8B /* AuthViewController.swift in Sources */,
+				B900F45525B118E800AB8A8B /* Service.swift in Sources */,
+				B94C893E25AEDBCB002E8FE6 /* SegmentedBarView.swift in Sources */,
+				B94C88A425AE268D002E8FE6 /* User.swift in Sources */,
+				B94C88C025AE8134002E8FE6 /* AuthService.swift in Sources */,
+				B94C88B625AE7F7D002E8FE6 /* Constantes.swift in Sources */,
+				B9CD24B025BA56BF0004413C /* AuthViewModel.swift in Sources */,
+				B94C88A925AE31FF002E8FE6 /* Enums.swift in Sources */,
+				B94C884825AE2218002E8FE6 /* SceneDelegate.swift in Sources */,
+				B999D74825B8C64300740715 /* AuthDataStackViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B94C885725AE2238002E8FE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B94C886025AE2238002E8FE6 /* TruequeFastTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B94C886225AE2238002E8FE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B94C886B25AE2238002E8FE6 /* TruequeFastUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B94C885D25AE2238002E8FE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B94C884125AE2217002E8FE6 /* TruequeFast */;
+			targetProxy = B94C885C25AE2238002E8FE6 /* PBXContainerItemProxy */;
+		};
+		B94C886825AE2238002E8FE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B94C884125AE2217002E8FE6 /* TruequeFast */;
+			targetProxy = B94C886725AE2238002E8FE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B94C884B25AE2218002E8FE6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B94C884C25AE2218002E8FE6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B94C885325AE2236002E8FE6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B94C885425AE2236002E8FE6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B94C886D25AE2238002E8FE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B94C886E25AE2238002E8FE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B94C887025AE2238002E8FE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFDE9174BB0827DD17F8B1A9 /* Pods-TruequeFast.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3LNYN6YV3;
+				INFOPLIST_FILE = TruequeFast/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.truequedegarage.TruequeFast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B94C887125AE2238002E8FE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 505E1F35D40325738FC312EE /* Pods-TruequeFast.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3LNYN6YV3;
+				INFOPLIST_FILE = TruequeFast/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.truequedegarage.TruequeFast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B94C887325AE2238002E8FE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4545E8D7F0842CAB94E8921A /* Pods-TruequeFastTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3LNYN6YV3;
+				INFOPLIST_FILE = TruequeFastTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.truequedegarage.TruequeFastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TruequeFast.app/TruequeFast";
+			};
+			name = Debug;
+		};
+		B94C887425AE2238002E8FE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A72F34916A637D18AE46146F /* Pods-TruequeFastTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3LNYN6YV3;
+				INFOPLIST_FILE = TruequeFastTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.truequedegarage.TruequeFastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TruequeFast.app/TruequeFast";
+			};
+			name = Release;
+		};
+		B94C887625AE2238002E8FE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02C49754A9D000A09285C175 /* Pods-TruequeFast-TruequeFastUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3LNYN6YV3;
+				INFOPLIST_FILE = TruequeFastUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.truequedegarage.TruequeFastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TruequeFast;
+			};
+			name = Debug;
+		};
+		B94C887725AE2238002E8FE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 749FB74D7905C5339805A207 /* Pods-TruequeFast-TruequeFastUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3LNYN6YV3;
+				INFOPLIST_FILE = TruequeFastUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.truequedegarage.TruequeFastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TruequeFast;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B94C883D25AE2217002E8FE6 /* Build configuration list for PBXProject "TruequeFast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B94C886D25AE2238002E8FE6 /* Debug */,
+				B94C886E25AE2238002E8FE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B94C886F25AE2238002E8FE6 /* Build configuration list for PBXNativeTarget "TruequeFast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B94C887025AE2238002E8FE6 /* Debug */,
+				B94C887125AE2238002E8FE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B94C887225AE2238002E8FE6 /* Build configuration list for PBXNativeTarget "TruequeFastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B94C887325AE2238002E8FE6 /* Debug */,
+				B94C887425AE2238002E8FE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B94C887525AE2238002E8FE6 /* Build configuration list for PBXNativeTarget "TruequeFastUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B94C887625AE2238002E8FE6 /* Debug */,
+				B94C887725AE2238002E8FE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B94C884E25AE2218002E8FE6 /* TruequeFast.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B94C884F25AE2218002E8FE6 /* TruequeFast.xcdatamodel */,
+			);
+			currentVersion = B94C884F25AE2218002E8FE6 /* TruequeFast.xcdatamodel */;
+			path = TruequeFast.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B94C883A25AE2217002E8FE6 /* Project object */;
+}
